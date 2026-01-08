@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --color-primary: #4a90a4;
+  --color-primary-light: #6babc0;
+  --color-primary-dark: #3a7a8c;
+  --color-secondary: #028A0F;
+  --color-secondary-light: #03a812;
+  --color-secondary-dark: #026b0c;
+  --color-accent: #f9f6f1;
+  --color-charcoal: #2d3436;
+  --color-green: #028A0F;
+  --color-green-light: #03a812;
+  --color-green-dark: #026b0c;
+  --color-green-lighter: #e8f5e9;
+  --color-brown: #6b5244;
+  --color-brown-light: #8b6f5e;
+  --color-brown-dark: #4a3a2f;
+}
+
+@layer base {
+  :root {
+    --color-primary: #4a90a4;
+    --color-primary-light: #6babc0;
+    --color-primary-dark: #3a7a8c;
+    --color-secondary: #028A0F;
+    --color-secondary-light: #03a812;
+    --color-secondary-dark: #026b0c;
+    --color-accent: #f9f6f1;
+    --color-charcoal: #2d3436;
+    --color-green: #028A0F;
+    --color-green-light: #03a812;
+    --color-green-dark: #026b0c;
+    --color-green-lighter: #e8f5e9;
+    --color-brown: #6b5244;
+    --color-brown-light: #8b6f5e;
+    --color-brown-dark: #4a3a2f;
+  }
+
+  html {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+
+  body {
+    font-family: 'Open Sans', system-ui, sans-serif;
+    color: var(--color-charcoal);
+    background-color: white;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  #root {
+    min-height: 100vh;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 600;
+  }
+}
+
+@layer utilities {
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+}
