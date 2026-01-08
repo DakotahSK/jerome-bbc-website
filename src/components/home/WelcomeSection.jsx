@@ -13,6 +13,7 @@ const WelcomeSection = () => {
               src="/handshake-welcome.jpg"
               alt="Welcome to Jerome Bible Baptist Church"
               className="rounded-lg h-[400px] w-full object-cover shadow-lg"
+              loading="lazy"
             />
           </div>
 

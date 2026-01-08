@@ -65,6 +65,7 @@ const About = () => {
                 src="/bible-study.jpg"
                 alt="Bible study at Jerome Bible Baptist Church"
                 className="rounded-lg w-full h-[400px] object-cover shadow-xl"
+                loading="lazy"
               />
             </div>
 
