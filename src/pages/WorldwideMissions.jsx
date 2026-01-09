@@ -170,8 +170,75 @@ const WorldwideMissions = () => {
         </div>
       </section>
 
-      {/* Get Involved */}
+      {/* Missionary Application */}
       <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <SectionTitle
+              subtitle="Apply"
+              title="Missionary Application"
+              centered
+            />
+            <Card className="p-8 mt-12">
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-full text-secondary mb-4">
+                  <Heart size={32} />
+                </div>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  Jerome Bible Baptist Church actively supports gospel preaching and church planting missions worldwide. If you are a missionary seeking support, we invite you to apply.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8 mb-8">
+                <div>
+                  <h4 className="font-bold text-lg mb-3 text-charcoal">Application Process</h4>
+                  <ul className="space-y-2 text-gray-600">
+                    <li className="flex items-start gap-2">
+                      <span className="text-secondary font-bold">1.</span>
+                      Complete the comprehensive application form
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-secondary font-bold">2.</span>
+                      Pastor Tim Knutson reviews all submissions
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-secondary font-bold">3.</span>
+                      If aligned with our expectations, you'll be contacted to present
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-bold text-lg mb-3 text-charcoal">Key Requirements</h4>
+                  <ul className="space-y-2 text-gray-600">
+                    <li>• Agreement with fundamental doctrinal beliefs</li>
+                    <li>• Support from home church as sending organization</li>
+                    <li>• Willingness to submit to accountability measures</li>
+                    <li>• Sound moral and doctrinal character</li>
+                    <li>• Clear calling to a specific mission field</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <a
+                  href="https://www.jeromebbc.com/ministries/missionary-application/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-secondary hover:bg-secondary-dark text-white font-bold py-3 px-8 rounded-lg transition-colors"
+                >
+                  Complete Application Form
+                </a>
+                <p className="text-sm text-gray-500 mt-4">
+                  Note: If at any time you change your doctrines, field, or home church, we will re-evaluate our support.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Get Involved */}
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">Support Our Missionaries</h2>

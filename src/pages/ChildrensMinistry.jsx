@@ -53,7 +53,7 @@ const ChildrensMinistry = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <SectionTitle
-              subtitle="Master Clubs"
+              subtitle="Sunday Programs"
               title="Engaging Programs for All Ages"
               centered
             />
@@ -61,6 +61,21 @@ const ChildrensMinistry = () => {
               We provide engaging programs across all age groups, teaching and training kids with principles from God's Word through games, achievement awards, and special events.
             </p>
           </div>
+
+          {/* Patch the Pirate Club */}
+          <Card className="mb-12 max-w-3xl mx-auto">
+            <div className="p-8 text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-full text-secondary mb-4">
+                <Heart size={32} />
+              </div>
+              <h3 className="text-2xl font-bold mb-2">Patch the Pirate Club</h3>
+              <p className="text-primary font-semibold text-sm mb-4">5 Years Old – 6th Grade</p>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Join us every Wednesday during the summer for Patch the Pirate Club! Kids enjoy exciting adventures, music, and Bible lessons through this fun and engaging program.
+              </p>
+              <p className="text-secondary font-semibold">Every Wednesday in the Summer</p>
+            </div>
+          </Card>
 
           {/* Age Groups */}
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
