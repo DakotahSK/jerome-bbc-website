@@ -27,6 +27,7 @@ const About = () => {
       name: 'Pastor Tim Knutson',
       role: 'Pastor',
       bio: 'Pastor Tim has been leading Jerome Bible Baptist Church since August 2015. His heart is to see people grow in their relationship with Christ and discover their purpose.',
+      image: '/gallery/IMG_3698.JPEG',
     },
     {
       name: 'Joey Thoreson',
@@ -52,24 +53,25 @@ const About = () => {
       {/* Our Story */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <SectionTitle
-              subtitle="Our Story"
-              title="Where We've Been, Where We're Going"
-              centered
-            />
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              {/* Image */}
+              <div>
+                <img
+                  src="/gallery/baptism.jpg"
+                  alt="Baptism at Jerome Bible Baptist Church"
+                  className="rounded-lg w-full object-contain shadow-xl"
+                  loading="lazy"
+                />
+              </div>
 
-            {/* Bible Study Image */}
-            <div className="mb-12">
-              <img
-                src="/bible-study.jpg"
-                alt="Bible study at Jerome Bible Baptist Church"
-                className="rounded-lg w-full h-[400px] object-cover shadow-xl"
-                loading="lazy"
-              />
-            </div>
-
-            <div className="prose prose-lg max-w-none text-gray-600 space-y-4">
+              {/* Content */}
+              <div>
+                <SectionTitle
+                  subtitle="Our Story"
+                  title="Where We've Been, Where We're Going"
+                />
+                <div className="prose prose-lg max-w-none text-gray-600 space-y-4">
               <p>
                 Jerome Bible Baptist Church was established as an independent Baptist congregation on
                 August 30, 1946, with 88 charter members. N.S. Anderson served as the first pastor,
@@ -96,6 +98,8 @@ const About = () => {
                 to biblical truth and authentic faith that our founders established nearly 80 years ago. We
                 remain committed to preaching God's Word and serving as everyday people devoted to an amazing God.
               </p>
+            </div>
+              </div>
             </div>
           </div>
         </div>
@@ -150,6 +154,14 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
             {staff.map((member, index) => (
               <Card key={index} hover>
+                {member.image && (
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-48 object-cover object-[center_25%] rounded-t-lg"
+                    loading="lazy"
+                  />
+                )}
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-1">{member.name}</h3>
                   <p className="text-green font-medium mb-3">{member.role}</p>

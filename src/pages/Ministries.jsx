@@ -10,7 +10,7 @@ const Ministries = () => {
       name: 'Children\'s Ministries',
       icon: <Baby size={40} />,
       ageGroup: 'Ages 4 through 6th Grade',
-      description: 'Master Clubs - We teach and train kids with principles from God\'s Word through games, achievement awards, and special events.',
+      description: 'We teach and train kids with principles from God\'s Word through games, achievement awards, and special events.',
       meetingTime: 'Sundays during services',
       color: 'bg-blue-500/10 text-blue-600',
       link: '/ministries/childrens',

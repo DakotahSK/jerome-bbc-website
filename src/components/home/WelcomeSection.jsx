@@ -10,9 +10,9 @@ const WelcomeSection = () => {
           {/* Image */}
           <div className="order-2 md:order-1">
             <img
-              src="/handshake-welcome.jpg"
-              alt="Welcome to Jerome Bible Baptist Church"
-              className="rounded-lg h-[400px] w-full object-cover shadow-lg"
+              src="/gallery/teach-all-nations.jpg"
+              alt="Teach All Nations - Jerome Bible Baptist Church"
+              className="rounded-lg w-full object-contain shadow-lg"
               loading="lazy"
             />
           </div>

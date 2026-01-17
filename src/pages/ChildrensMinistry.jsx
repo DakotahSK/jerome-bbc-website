@@ -47,6 +47,19 @@ const ChildrensMinistry = () => {
           </div>
         </div>
       </section>
+      {/* Featured Photo */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <img
+              src="/gallery/IMG_6328.JPEG"
+              alt="Children's Christmas program at JBBC"
+              className="rounded-lg w-full object-contain shadow-xl"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
 
       {/* Overview */}
       <section className="py-20 bg-white">

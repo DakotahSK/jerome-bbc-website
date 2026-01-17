@@ -9,6 +9,7 @@ import ChildrensMinistry from './pages/ChildrensMinistry';
 import StudentMinistry from './pages/StudentMinistry';
 import AdultMinistry from './pages/AdultMinistry';
 import WorldwideMissions from './pages/WorldwideMissions';
+import MissionaryApplication from './pages/MissionaryApplication';
 import Sermons from './pages/Sermons';
 import Contact from './pages/Contact';
 import Admin from './pages/Admin';
@@ -30,6 +31,7 @@ function App() {
             <Route path="/ministries/students" element={<StudentMinistry />} />
             <Route path="/ministries/adults" element={<AdultMinistry />} />
             <Route path="/ministries/missions" element={<WorldwideMissions />} />
+            <Route path="/ministries/missionary-application" element={<MissionaryApplication />} />
             <Route path="/sermons" element={<Sermons />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/admin/login" element={<AdminLogin />} />

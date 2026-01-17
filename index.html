@@ -6,9 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Welcome to Jerome Bible Baptist Church in Jerome, Idaho. A group of everyday people serving an amazing God. Join us Sundays at 10 AM & 11 AM." />
     <title>Jerome Bible Baptist Church - Welcome Home</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
+    <!-- Hidden form for Netlify form detection -->
+    <form name="missionary-application" netlify netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="familyMembers" />
+      <input name="weddingAnniversary" />
+      <input name="previousMarriage" />
+      <input name="previousMarriageExplanation" />
+      <input name="wifeSharesBeliefs" />
+      <input name="wifeBeliefsDifference" />
+      <input name="wifeSupports" />
+      <input name="homeChurchName" />
+      <input name="churchStreet" />
+      <input name="churchCity" />
+      <input name="churchState" />
+      <input name="churchZip" />
+      <input name="churchCountry" />
+      <input name="pastorName" />
+      <input name="churchSupportsFinancially" />
+      <input name="sendingChurch" />
+      <input name="email" />
+      <input name="website" />
+      <input name="missionsBoard" />
+      <input name="missionsBoardInfo" />
+      <input name="bibleEducation" />
+      <input name="servedAsPastor" />
+      <input name="churchesPastored" />
+      <input name="salvationTestimony" />
+      <input name="callToMinistry" />
+      <input name="missionField" />
+      <input name="whyThisField" />
+      <input name="visitedField" />
+      <input name="organizedChurches" />
+      <input name="churchesOrganized" />
+      <input name="fieldStreet" />
+      <input name="fieldCity" />
+      <input name="fieldState" />
+      <input name="fieldZip" />
+      <input name="fieldCountry" />
+      <input name="hasFieldAddress" />
+      <input name="currentMinistryCount" />
+      <input name="unsecuredDebt" />
+      <input name="debtDetails" />
+      <input name="financialPreparation" />
+      <input name="retirementPreparation" />
+      <input name="creationView" />
+      <input name="churchDefinition" />
+      <input name="bodyOfChrist" />
+      <input name="firstChurch" />
+      <input name="savedMembership" />
+      <input name="baptismAccepted" />
+      <input name="baptismAuthority" />
+      <input name="corinthiansBaptism" />
+      <input name="spiritBaptism" />
+      <input name="lordsSupper" />
+      <input name="communionElements" />
+      <input name="visitingPastorCommunion" />
+      <input name="kjvView" />
+      <input name="useOtherTranslations" />
+      <input name="textusReceptus" />
+      <input name="repentanceNecessary" />
+      <input name="repentanceDefinition" />
+      <input name="ministryFocus" />
+      <input name="preDeputationOutreach" />
+      <input name="christReturn" />
+      <input name="musicStyle" />
+      <input name="eternalSecurity" />
+      <input name="givingTeaching" />
+      <input name="personallyTithe" />
+      <input name="churchDisciplinaryPower" />
+      <input name="accountableStandards" />
+      <input name="recallAuthority" />
+      <input name="notifyIssues" />
+      <input name="supportContinuation" />
+      <input name="fieldChangeNotify" />
+      <input name="resentedQuestions" />
+      <input name="resentedWhich" />
+      <input name="additionalComments" />
+      <input name="phone" />
+      <input name="digitalSignature" />
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+  <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
